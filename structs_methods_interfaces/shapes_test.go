@@ -35,7 +35,6 @@ func TestCircleArea(t *testing.T) {
 	}{
 		{"Circle1", Circle{Radius: 4}, 50.26},
 		{"Circle2", Circle{Radius: 8},	201.06},
-
 	}
 
 	const epsilon = 0.01
