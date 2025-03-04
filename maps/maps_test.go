@@ -9,8 +9,13 @@ func TestSearch(t *testing.T) {
 	got := Search(dictionary, "test")
 	want := "this is just a test"
 
-	if got != want {
-		t.Errorf("got %v, want %v, given %v", got, want, "test")
-	}
+	assertStrings(t, got, want)
+}
 
+func assertStrings(t testing.TB, got, want string) {
+	t.Helper()
+
+	if got != want {
+		t.Errorf("got %q want %q", got, want)
+	}
 }
