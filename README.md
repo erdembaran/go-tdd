@@ -13,8 +13,7 @@ go test ./...
 To run tests for a specific package:
 
 ```
-go test ./src/iteration
-
+go test ./iteration
 ```
 
 ## Dependencies
