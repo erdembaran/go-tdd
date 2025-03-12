@@ -11,7 +11,15 @@ func TestCountdown(t *testing.T) {
 	Countdown(buffer)
 
 	got := buffer.String()
-	want := "8"
+	want := `8
+7
+6
+5
+4
+3
+2
+1
+Go!`
 
 	if got != want {
 		t.Errorf("got %v, but want %v", got, want)
