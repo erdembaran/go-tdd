@@ -11,6 +11,8 @@ func TestCountdown(t *testing.T) {
 	Countdown(buffer)
 
 	got := buffer.String()
+
+	// what you see is what you get
 	want := `8
 7
 6
